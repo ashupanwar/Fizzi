@@ -1,3 +1,44 @@
 .logo {
-  width: 50px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  margin-bottom: -90px;
+  position: relative;
+  height: 50px;
+}
+
+.header-logo {
+  z-index: 10;
+  height: 50px;
+  cursor: pointer;
+  color: sky;
+  :hover {
+    .mask-group {
+      transform: translateY(80px);
+    }
+  }
+}
+
+.mask-group {
+  transition: transform 0.2s ease-in-out;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 3s linear infinite;
 }
