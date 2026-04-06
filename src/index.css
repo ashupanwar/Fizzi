@@ -3,11 +3,39 @@
   --secondary-color: #4caf50;
   --background-color: #f0f0f0;
   --text-color: #333333;
+  --yellow-300: #fde047;
+  --orange-500: #f97316;
+  --orange-600: #ea580c;
+  --orange-700: #c2410c;
+  --sky-950: #082f49;
+}
+
+@font-face {
+  font-family: "Alpino Variable";
+  /* The URL is relative to the root if the font is in the public folder */
+  src: url("/assets/fonts/Alpino-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap; /* Improves performance by showing fallback text until font loads */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Alpino Variable", sans-serif;
   color: var(--text-color);
+  background-color: var(--yellow-300);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
 }
